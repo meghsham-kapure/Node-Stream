@@ -1,0 +1,22 @@
+{
+  "name": "node-stream",
+  "version": "1.0.0",
+  "description": "A MERN Stack Video Streaming & Social Platform",
+  "keywords": [
+    "javascript",
+    "backend",
+    "chaiaurcode",
+    "node",
+    "mern"
+  ],
+  "license": "ISC",
+  "author": "dev.maverick",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
