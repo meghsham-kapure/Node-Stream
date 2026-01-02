@@ -1,3 +1,4 @@
+.ignore
 # Dependencies
 node_modules/
 .pnp
@@ -71,3 +72,4 @@ temp/
 
 # Testing
 jest-cache/
+#DontPush/mongo username password.png

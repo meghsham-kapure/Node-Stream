@@ -6,6 +6,8 @@ NodeStream is a full-stack YouTube-like video streaming and social media platfor
 It allows users to upload videos, subscribe to channels, like & comment on content, create playlists, post tweets, and track watch history.
 
 This project is built as a learning-focused production-style application demonstrating real-world backend design, authentication, and scalable APIs.
+SecureDev01.vscode-multi-themes
+
 
 ## 🚀 Features
 
