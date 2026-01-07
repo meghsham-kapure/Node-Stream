@@ -1,1 +1,1 @@
-export const DB_NAME = "Node-Stream_DB"
+export const DB_NAME = "node-stream-db";
