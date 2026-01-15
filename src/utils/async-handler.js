@@ -1,12 +1,15 @@
-const asyncHandlerTC = (fun) => async (req, res, nxt) => {
-    try {
-        await fun(req, res, nxt);
-    } catch (error) {
-        res.status(error.code || 500).json({ success: false, message: error.message });
-    }
+// const asyncHandler = (requestHandler) => async (request, response, nxt) => {
+//     try {
+//         await requestHandler(request, response, nxt);
+//     } catch (error) {
+//         response.status(error.code || 500).json({ success: false, message: error.message });
+//     }
+// };
+
+const asyncHandler = (requestHandler) => {
+    return (request, response, next) => {
+        Promise.resolve(requestHandler(request, response, next)).catch(next);
+    };
 };
 
-const asyncHandlerPromise = (fn) => (req, res, next) => {
-    Promise.resolve(fn(req, res, next)).catch(next);
-};
-err.message;
+export default asyncHandler;

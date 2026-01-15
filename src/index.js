@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config({ path: "./.env" });
-import { connectMongoDB } from "./db/connect-mongo.js";
-import { app } from "./app.js";
+import connectMongoDB from "./db/connect-mongo.js";
+import app from "./app.js";
 
 console.log(`Node-Stream started at ${new Date().toLocaleString()}`);
 
